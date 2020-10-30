@@ -31,4 +31,8 @@ body {
   .app {
     flex-direction: column;
   }
+
+  body {
+    margin: 20px;
+  }
 }
