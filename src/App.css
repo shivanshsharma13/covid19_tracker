@@ -1,25 +1,39 @@
+:root {
+  --dropdown_header: white;
+  --background_app: #161625;
+}
+
 * {
   margin: 0;
+}
+
+body {
+  background-color: #f5f6fa;
 }
 
 .app {
   display: flex;
   justify-content: space-evenly;
+  background-color: var(--background_app);
+  padding: 20px;
+}
+
+.app__dropdown {
+  background-color: var(--dropdown_header);
+  border-radius: 5px;
 }
 
 .app__header {
   display: flex;
+  align-items: center;
   margin-bottom: 20px;
   justify-content: space-between;
-  align-items: center;
 }
 
-.app__left {
-  flex: 0.9;
-}
-
-body {
-  background-color: #f5f6fa;
+.app__header > h1 {
+  color: green;
+  font-size: 2rem;
+  width: 200px;
 }
 
 .app__stats {
@@ -27,12 +41,42 @@ body {
   justify-content: space-between;
 }
 
+.app__left {
+  flex: 0.9;
+}
+
+/* .MuiCardContent-root {
+  background-color: rgb(30, 30, 48);
+  color: #f5f6fa;
+} */
+
+.app__left > h3 {
+  align-items: center;
+  color: #f5f6fa;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.app__information > h3:last-of-type {
+  margin-top: 1rem;
+}
+
+.linegraph {
+  background-color: #f5f6fa;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 990px) {
   .app {
     flex-direction: column;
   }
+}
 
-  body {
-    margin: 20px;
+@media (max-width: 440px) {
+  .MuiSelect-selectMenu {
+    height: 10px;
   }
 }
