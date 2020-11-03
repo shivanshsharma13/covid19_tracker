@@ -2,7 +2,7 @@
 
 ![Main image](main.png)
 
-## [Liev Here!!](https://shivkaansh.github.io/covid19_tracker/)
+## [Live Here!!](https://shivkaansh.github.io/covid19_tracker/)
 
 This is a Covid reports web app from the world. We used a covid API to figure out the new cases, recovery and deaths.
 
